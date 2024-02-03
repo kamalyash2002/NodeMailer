@@ -18,15 +18,15 @@ app.post("/send-email", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail", // e.g., "gmail" or use your SMTP settings
       auth: {
-        user: "airaptorx@gmail.com", // your email
-        pass: "mflghlmggbmrjqot", // your app password
+        user: "", // your email
+        pass: "", // your app password
       },
     });
 
     // Email content
     const mailOptions = {
-      from: "airaptorx@gmail.com",
-      to: "pvemuri@panoplia.io", // recipient's email
+      from: "",
+      to: "", // recipient's email
       subject: `Demo Request : ${firstName} ${lastName}`,
       html: `
         <p>Corporate Email: ${email}</p>
